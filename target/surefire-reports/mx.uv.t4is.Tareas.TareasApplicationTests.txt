@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: mx.uv.t4is.Tareas.TareasApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.379 s - in mx.uv.t4is.Tareas.TareasApplicationTests

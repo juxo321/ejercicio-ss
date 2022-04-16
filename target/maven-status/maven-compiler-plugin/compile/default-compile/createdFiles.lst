@@ -1,0 +1,13 @@
+mx\uv\t4is\Tareas\TareasApplication.class
+mx\uv\t4is\Tareas\TareasEndPoint.class
+https\t4is_uv_mx\tareas\EliminarTareaResponse.class
+https\t4is_uv_mx\tareas\ObjectFactory.class
+mx\uv\t4is\Tareas\TareaDAO.class
+https\t4is_uv_mx\tareas\BuscarTareasResponse.class
+mx\uv\t4is\Tareas\Itareadao.class
+https\t4is_uv_mx\tareas\CrearTareaResponse.class
+https\t4is_uv_mx\tareas\package-info.class
+https\t4is_uv_mx\tareas\CrearTareaRequest.class
+mx\uv\t4is\Tareas\TareasConf.class
+https\t4is_uv_mx\tareas\BuscarTareasResponse$Tareas.class
+https\t4is_uv_mx\tareas\EliminarTareaRequest.class
