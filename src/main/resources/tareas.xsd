@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="https://t4is.uv.mx/tareas"
+  xmlns:tns="https://t4is.uv.mx/tareas"
+  elementFormDefault="qualified">
+  <xs:element name="CrearTareaRequest">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="tarea" type="xs:string"/>
+    </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearTareaResponse">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="respuesta" type="xs:string"/>
+    </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarTareasRequest"/>
+  <xs:element name="BuscarTareasResponse">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="tareas" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:int"></xs:element>
+                <xs:element name="tarea" type="xs:string"></xs:element>
+              </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ <!--Eliminar-->
+ <xs:element name="EliminarTareaRequest">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />            
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+ <xs:element name="EliminarTareaResponse">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="respuesta" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+</xs:schema> 
