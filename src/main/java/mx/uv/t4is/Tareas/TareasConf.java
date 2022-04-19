@@ -17,7 +17,6 @@ public class TareasConf {
     @Bean
     public XsdSchema tareasSchema(){
         return new SimpleXsdSchema(new ClassPathResource("tareas.xsd"));
-
     }
 
     @Bean

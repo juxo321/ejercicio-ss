@@ -3,6 +3,7 @@
   targetNamespace="https://t4is.uv.mx/tareas"
   xmlns:tns="https://t4is.uv.mx/tareas"
   elementFormDefault="qualified">
+  <!--Crear Tarea-->
   <xs:element name="CrearTareaRequest">
     <xs:complexType>
     <xs:sequence>
@@ -17,6 +18,7 @@
     </xs:sequence>
     </xs:complexType>
   </xs:element>
+   <!--Buscar Tareas-->
   <xs:element name="BuscarTareasRequest"/>
   <xs:element name="BuscarTareasResponse">
     <xs:complexType>

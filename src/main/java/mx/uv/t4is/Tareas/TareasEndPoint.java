@@ -19,12 +19,13 @@ import https.t4is_uv_mx.tareas.EliminarTareaResponse;
 
 @Endpoint
 public class TareasEndPoint {
-    //int contadorId = 1 ;
-    //List<BuscarSaludosResponse.Saludos> saludos = new ArrayList<>();
 
+    //Creo mi instancia de la interfaz para poder hacer uso de sus metodos e insertar nuevos objetos
     @Autowired
     Itareadao itareadao;
 
+
+    //A partir de la peticion se lanza crearTarea y se crea una nueva tarea a partir de los datos que trae la peticion  con la instancia se guarda en la base de datos y finalmente se retrna la respuesta.
     @PayloadRoot(localPart = "CrearTareaRequest", namespace = "https://t4is.uv.mx/tareas")
     @ResponsePayload
     public CrearTareaResponse crearTarea(@RequestPayload CrearTareaRequest peticion) {
@@ -36,6 +37,7 @@ public class TareasEndPoint {
         return respuesta;
     }
 
+    //Para buscar los saludos, se recuperan y se guardan en una lista de tipo tarea y despues se recorre para poder asiganrle los valores a un objeto y mandarlo como respuesta.
     @PayloadRoot(localPart = "BuscarTareasRequest", namespace = "https://t4is.uv.mx/tareas")
     @ResponsePayload
     public BuscarTareasResponse buscarTareas(){
@@ -50,7 +52,7 @@ public class TareasEndPoint {
         return respuesta;
     }
 
-
+    //En esta parte se pide el id de la tarea que se desee eliminar y a partir de una funcion se elimina por id y se regresa la respuesta.
     @PayloadRoot(localPart = "EliminarTareaRequest", namespace = "https://t4is.uv.mx/tareas")
     @ResponsePayload
     public EliminarTareaResponse eliminarTarea(@RequestPayload EliminarTareaRequest peticion){
